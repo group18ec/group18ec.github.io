@@ -4,128 +4,306 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <title>Hussein Mansour - Data Scientist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/3i3z5gyxLE8Gm3aG5LdZ5RfhxDvkBt//jjpt//" crossorigin="anonymous">
+    <title>Hussein Mansour - Data Scientist Master student at TAMU</title>
     <style>
+        :root {
+            --primary-color: #00a7b1;
+            --secondary-color: #4fc4c4;
+            --accent-color: #ffe366;
+            --text-color: #333;
+            --bg-color: #f4f4f4;
+        }
         body {
-            font-family: 'Roboto', sans-serif;
-            margin: 2em;
-            line-height: 1.5;
-            color: #333;
-            background-color: #f4f4f4;
-        }
-        h1 {
-        font-size: 2.5em;
-        color: #0057b8;
-        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        line-height: 1.5;
+        color: var(--text-color);
+        background-color: var(--bg-color);
         }
 
-        h2 {
-            font-size: 1.8em;
-            color: #444;
+        header {
+            background-color: var(--primary-color);
+            padding: 1.5rem 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to bottom, var(--primary-color), rgba(0, 0, 0, 0));
+            z-index: -1;
+        }
+
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            border: 5px solid var(--secondary-color);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #fff;
             font-weight: 700;
-            margin-bottom: 0.5em;
-            padding-bottom: 0.25em;
-            border-bottom: 2px solid #e0e0e0;
+            margin: 1rem 0 0.5rem;
         }
 
-        ul {
-            list-style: none;
-            padding-left: 0;
+        header p {
+            font-size: 1.1em;
+            margin-bottom: 0;
+            color: #fff;
         }
 
-        li {
-            padding: 0.25em 0;
-        }
-
-        a {
-            color: #0057b8;
+        header a {
+            color: #fff;
             text-decoration: none;
+            margin: 0 0.5rem;
         }
 
-        a:hover {
+        header a:hover {
             text-decoration: underline;
         }
 
-        .contact-info {
-            font-size: 1.1em;
-            margin-bottom: 1.5em;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
         }
 
         .section {
             margin-bottom: 2em;
+            padding: 1.5rem;
             background-color: #fff;
-            padding: 1.5em;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
+            position: relative;
+            overflow: hidden;
         }
 
-        .project-name {
+        .section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background-color: var(--accent-color);
+            transform: rotate(45deg);
+            z-index: -1;
+            opacity: 0.15;
+            transition: 0.5s;
+        }
+
+        .section:hover::before {
+            top: -30%;
+            left: -30%;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: var(--text-color);
             font-weight: 700;
+            margin-bottom: 0.5em;
+            padding-bottom: 0.25em;
+            border-bottom: 2px solid var(--secondary-color);
+            }
+        ul {
+            list-style: none;
+            padding-left: 0;
+            }
+
+        li {
+            padding: 0.25em 0;
+            }
+
+        .project {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 1em;
+            padding: 1em;
+            background-color: var(--bg-color);
+            border: 1px solid var(--secondary-color);
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
         }
 
-        .project-details {
-            font-size: 0.9em;
-            font-style: italic;
-            color: #777;
+        .project img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .project:hover {
+            background-color: var(--secondary-color);
+            color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .project a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
         }
     </style>
     </head>
-    <body>
-        <h1>Hussein Mansour</h1>
-        <p class="contact-info">
+<body>
+    <header>
+    <img src="profile_picture.jpg" alt="Profile Picture">
+    <h1>Hussein Mansour</h1>
+        <p>
             College Station, TX | <a href="https://www.linkedin.com/in/husseinmmansour/" target="_blank">LinkedIn</a> | 214-771-8512 | <a href="https://github.com/HusseinMansourMohd" target="_blank">GitHub</a> | <a href="mailto:hussein.mansour@tamu.edu">hussein.mansour@tamu.edu</a>
         </p>
-        <div class="section">
-        <h2>Education</h2>
-        <ul>
-            <li>MS in Data Science, Texas A&M University (Expected: August 2024)</li>
-            <li>B.C.S. in Electrical & Electronic Engineering, University of Khartoum (Graduated: January 2021)</li>
-        </ul>
-    </div>
+    </header>
+    <main class="container">
+        <section class="section">
+            <h2>Education</h2>
+            <ul>
+                <li>MS in Data Science, Texas A&M University (Expected: August 2024)</li>
+                <li>B.C.S. in Electrical & Electronic Engineering, University of Khartoum (Graduated: January 2021)</li>
+            </ul>
+        </section>
+        <section class="section">
+            <h2>Work Experience</h2>
+            <ul>
+                <li>Data Engineer Intern, Kuwaiti Sudanese Holding Company (December 2021 – August 2022)</li>
+                <li>Software Engineer, Mechatronics Integrated Solutions (January 2021 - December 2021)</li>
+            </ul>
+        </section>
 
-    <div class="section">
-        <h2>Work Experience</h2>
-        <ul>
-            <li>Data Engineer Intern, Kuwaiti Sudanese Holding Company (December 2021 – August 2022)</li>
-            <li>Software Engineer, Mechatronics Integrated Solutions (January 2021 - December 2021)</li>
-        </ul>
-    </div>
+        <section class="section">
+            <h2>Skills & Interests</h2>
+            <ul>
+                <li>Programming: Python, R, SQL, Scala, Bash, C++, TypeScript</li>
+                <li>Modeling: Inferential & Predictive Modeling, Hypothesis Testing, and more</li>
+                <li>Deep Learning: CNNs, RNNs, GANs, Transformers, BERT, GPT, LSTM, Q-learning</li>
+                <li>Libraries: NumPy, Pandas, PyTorch, JAX, TensorFlow, Keras, Scikit-learn, stats model</li>
 
-    <div class="section">
-        <h2>Skills & Interests</h2>
+
+
+
+    husseinmcwii13@gmail.com
+    next
+    less
+    Copy code
+                <li>Data Visualization/Cloud: matplotlib, Seaborn, plotly, ggplot2, AWS cloud-based tools</li>
+                <li>Databases/Tools: Hive, MongoDB, PostgreSQL, Microsoft Excel, Tableau</li>
+            </ul>
+        </section>
+
+    <section class="section">
+        <h2>Academic Achievements & Projects</h2
+                     <li>Data Visualization/Cloud: matplotlib, Seaborn, plotly, ggplot2, AWS cloud-based tools</li>
+            <li>Databases/Tools: Hive, MongoDB, PostgreSQL, Microsoft Excel, Tableau</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>Academic Achievements & Projects</h2>
         <ul>
-            <li>Programming: Python, R, SQL, Scala, Bash, C++,TypeScript</li>
-            <li>Modeling: Inferential & Predictive Modeling, Hypothesis Testing, and more</li>
-            <li>Deep Learning: CNNs, RNNs, GANs, Transformers, BERT, GPT, LSTM, Q-learning</li>
-            <li>Libraries: NumPy, Pandas, PyTorch, JAX, TensorFlow, Keras, Scikit-learn, stats model</li>
+            <li>MS Data Science Scholarship at Texas A&M University (Merit-Based)</li>
+            <li>Open Source contributions: Openai, Huggingface</li>
+            <li>2nd position domestically in IEEEXtreme competitive programming competition</li>
+            <li>4th position in EEESE projects competition (Project: Arduino-Mini-CNC-Plotter-Machine)</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>Projects</h2>
+        <div class="project">
+            <a href="https://github.com/YourGitHubUsername/Content-Based-Image-Retrieval" target="_blank">
+                <img src="project1_image.jpg" alt="Project Image">
+                <h3>Content-Based Image Retrieval</h3>
+                <p>ResNet, EfficientNet, Diffusion</p>
+            </a>
+        </div>
+        <div class="project">
+            <a href="https://github.com/YourGitHubUsername/Enzyme-Classification" target="_blank">
+                <img src="project2_image.jpg" alt="Project Image">
+                <h3>Enzyme Classification</h3>
+                <p>Bidirectional LSTM, RNN, SGD optimizer</p>
+            </a>
+        </div>
+        <div class="project">
+            <a href="https://github.com/YourGitHubUsername/Predicting-Customer-Churn" target="_blank">
+                <img src="project3_image.jpg" alt="Project Image">
+                <h3>Predicting Customer Churn - Market Analysis</h3>
+                <p>XGBoost, Linear Regression, Decision Trees</p>
+            </a>
+        </div>
+        <div class="project">
+            <a href="https://github.com/YourGitHubUsername/Web-Traffic-Forecasting" target="_blank">
+                <img src="project4_image.jpg" alt="Project Image">
+                <h3>Web-Traffic Multivariant Time Series Forecasting</h3>
+                <p>RNN, Bidirectional LSTM, SGD optimizer</p>
+            </a>
+        </div>
+    </section>
+</main>
+</body>
+</html>
             <li>Data Visualization/Cloud: matplotlib, Seaborn, plotly, ggplot2, AWS cloud-based tools</li>
             <li>Databases/Tools: Hive, MongoDB, PostgreSQL, Microsoft Excel, Tableau</li>
-            </ul>
-    </div>  
-    <div class="section">
-    <h2>Academic Achievements & Projects</h2>
-    <ul>
-        <li>MS Data Science Scholarship at Texas A&M University (Merit-Based)</li>
-        <li>Open Source contributions: Openai, Huggingface</li>
-        <li>2nd position domestically in IEEEXtreme competitive programming competition</li>
-        <li>4th position in EEESE projects competition (Project: Arduino-Mini-CNC-Plotter-Machine)</li>
-    </ul>
-    <h2>Projects</h2>
-    <ul>
-        <li><span class="project-name">Content-Based Image Retrieval</span> (Thesis): <span class="project-details">ResNet, EfficientNet, Diffusion</span></li>
-        <li><span class="project-name">Enzyme Classification</span>: <span class="project-details">Bidirectional LSTM, RNN, SGD optimizer</span></li>
-        <li><span class="project-name">Predicting Customer Churn - Market Analysis</span>: <span class="project-details">XGBoost, Linear Regression, Decision Trees</span></li>
-        <li><span class="project-name">Web-Traffic Multivariant Time Series Forecasting</span>: <span class="project-details">RNN, Bidirectional LSTM, SGD optimizer</span></li>
-    </ul>
-    </div>
-    </body>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>Academic Achievements & Projects</h2>
+        <ul>
+            <li>MS Data Science Scholarship at Texas A&M University (Merit-Based)</li>
+            <li>Open Source contributions: Openai, Huggingface</li>
+            <li>2nd position domestically in IEEEXtreme competitive programming competition</li>
+            <li>4th position in EEESE projects competition (Project: Arduino-Mini-CNC-Plotter-Machine)</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>Projects</h2>
+        <div class="project">
+            <a href="https://github.com/YourGitHubUsername/Content-Based-Image-Retrieval" target="_blank">
+                <img src="project1_image.jpg" alt="Project Image">
+                <h3>Content-Based Image Retrieval</h3>
+                <p>ResNet, EfficientNet, Diffusion</p>
+            </a>
+        </div>
+        <div class="project">
+            <a href="https://github.com/YourGitHubUsername/Enzyme-Classification" target="_blank">
+                <img src="project2_image.jpg" alt="Project Image">
+                <h3>Enzyme Classification</h3>
+                <p>Bidirectional LSTM, RNN, SGD optimizer</p>
+            </a>
+        </div>
+        <div class="project">
+            <a href="https://github.com/YourGitHubUsername/Predicting-Customer-Churn" target="_blank">
+                <img src="project3_image.jpg" alt="Project Image">
+                <h3>Predicting Customer Churn - Market Analysis</h3>
+                <p>XGBoost, Linear Regression, Decision Trees</p>
+            </a>
+        </div>
+        <div class="project">
+            <a href="https://github.com/YourGitHubUsername/Web-Traffic-Forecasting" target="_blank">
+                <img src="project4_image.jpg" alt="Project Image">
+                <h3>Web-Traffic Multivariant Time Series Forecasting</h3>
+                <p>RNN, Bidirectional LSTM, SGD optimizer</p>
+            </a>
+        </div>
+    </section></body>
+</html>
+</main>
+</body>
 </html>
 
 
-
-
-
-        
-
-            
 
