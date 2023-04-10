@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/3i3z5gyxLE8Gm3aG5LdZ5RfhxDvkBt//jjpt//" crossorigin="anonymous">
-    <title>Hussein Mansour - Data Scientist Master student at TAMU</title>
+    <title>Hussein Mansour - Data Scientist</title>
     <style>
         :root {
             --primary-color: #00a7b1;
@@ -14,155 +14,155 @@
             --text-color: #333;
             --bg-color: #f4f4f4;
         }
-        body {
+            body {
         font-family: 'Roboto', sans-serif;
         margin: 0;
         line-height: 1.5;
         color: var(--text-color);
         background-color: var(--bg-color);
-        }
+    }
 
-        header {
-            background-color: var(--primary-color);
-            padding: 1.5rem 0;
-            text-align: center;
-            position: relative;
-        }
+    header {
+        background-color: var(--primary-color);
+        padding: 1.5rem 0;
+        text-align: center;
+        position: relative;
+    }
 
-        header::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 100px;
-            background: linear-gradient(to bottom, var(--primary-color), rgba(0, 0, 0, 0));
-            z-index: -1;
-        }
+    header::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: linear-gradient(to bottom, var(--primary-color), rgba(0, 0, 0, 0));
+        z-index: -1;
+    }
 
-        header img {
-            border-radius: 50%;
-            width: 150px;
-            border: 5px solid var(--secondary-color);
-        }
+    header img {
+        border-radius: 50%;
+        width: 150px;
+        border: 5px solid var(--secondary-color);
+    }
 
-        header h1 {
-            font-size: 2.5em;
-            color: #fff;
-            font-weight: 700;
-            margin: 1rem 0 0.5rem;
-        }
+    header h1 {
+        font-size: 2.5em;
+        color: #fff;
+        font-weight: 700;
+        margin: 1rem 0 0.5rem;
+    }
 
-        header p {
-            font-size: 1.1em;
-            margin-bottom: 0;
-            color: #fff;
-        }
+    header p {
+        font-size: 1.1em;
+        margin-bottom: 0;
+        color: #fff;
+    }
 
-        header a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 0.5rem;
-        }
+    header a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 0.5rem;
+    }
 
-        header a:hover {
-            text-decoration: underline;
-        }
+    header a:hover {
+        text-decoration: underline;
+    }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
 
-        .section {
-            margin-bottom: 2em;
-            padding: 1.5rem;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            position: relative;
-            overflow: hidden;
-        }
+    .section {
+        margin-bottom: 2em;
+        padding: 1.5rem;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+    }
 
-        .section::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background-color: var(--accent-color);
-            transform: rotate(45deg);
-            z-index: -1;
-            opacity: 0.15;
-            transition: 0.5s;
-        }
+    .section::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background-color: var(--accent-color);
+        transform: rotate(45deg);
+        z-index: -1;
+        opacity: 0.15;
+        transition: 0.5s;
+    }
 
-        .section:hover::before {
-            top: -30%;
-            left: -30%;
-        }
+    .section:hover::before {
+        top: -30%;
+        left: -30%;
+    }
 
-        h2 {
-            font-size: 1.8em;
-            color: var(--text-color);
-            font-weight: 700;
-            margin-bottom: 0.5em;
-            padding-bottom: 0.25em;
-            border-bottom: 2px solid var(--secondary-color);
-            }
+    h2 {
+        font-size: 1.8em;
+        color: var(--text-color);
+        font-weight: 700;
+        margin-bottom: 0.5em;
+        padding-bottom: 0.25em;
+        border-bottom: 2px solid var(--secondary-color);
+        }
         ul {
-            list-style: none;
-            padding-left: 0;
-            }
+        list-style: none;
+        padding-left: 0;
+    }
 
-        li {
-            padding: 0.25em 0;
-            }
+    li {
+        padding: 0.25em 0;
+    }
 
-        .project {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            margin-bottom: 1em;
-            padding: 1em;
-            background-color: var(--bg-color);
-            border: 1px solid var(--secondary-color);
-            border-radius: 5px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            transition: 0.3s;
-        }
+    .project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 1em;
+        padding: 1em;
+        background-color: var(--bg-color);
+        border: 1px solid var(--secondary-color);
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+    }
 
-        .project img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 5px;
-            margin-bottom: 1rem;
-        }
+    .project img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+    }
 
-        .project:hover {
-            background-color: var(--secondary-color);
-            color: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-        }
+    .project:hover {
+        background-color: var(--secondary-color);
+        color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
 
-        .project a {
-            color: inherit;
-            text-decoration: none;
-        }
+    .project a {
+        color: inherit;
+        text-decoration: none;
+    }
 
-        .project a:hover {
-            text-decoration: underline;
-        }
-    </style>
-    </head>
+    .project a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
 <body>
     <header>
-    <img src="profile_picture.jpg" alt="Profile Picture">
-    <h1>Hussein Mansour</h1>
+        <img src="profile_picture.jpg" alt="Profile Picture">
+        <h1>Hussein Mansour</h1>
         <p>
             College Station, TX | <a href="https://www.linkedin.com/in/husseinmmansour/" target="_blank">LinkedIn</a> | 214-771-8512 | <a href="https://github.com/HusseinMansourMohd" target="_blank">GitHub</a> | <a href="mailto:hussein.mansour@tamu.edu">hussein.mansour@tamu.edu</a>
         </p>
@@ -175,37 +175,22 @@
                 <li>B.C.S. in Electrical & Electronic Engineering, University of Khartoum (Graduated: January 2021)</li>
             </ul>
         </section>
-        <section class="section">
-            <h2>Work Experience</h2>
-            <ul>
-                <li>Data Engineer Intern, Kuwaiti Sudanese Holding Company (December 2021 – August 2022)</li>
-                <li>Software Engineer, Mechatronics Integrated Solutions (January 2021 - December 2021)</li>
-            </ul>
-        </section>
-
-        <section class="section">
-            <h2>Skills & Interests</h2>
-            <ul>
-                <li>Programming: Python, R, SQL, Scala, Bash, C++, TypeScript</li>
-                <li>Modeling: Inferential & Predictive Modeling, Hypothesis Testing, and more</li>
-                <li>Deep Learning: CNNs, RNNs, GANs, Transformers, BERT, GPT, LSTM, Q-learning</li>
-                <li>Libraries: NumPy, Pandas, PyTorch, JAX, TensorFlow, Keras, Scikit-learn, stats model</li>
-
-
-
-
-    husseinmcwii13@gmail.com
-    next
-    less
-    Copy code
-                <li>Data Visualization/Cloud: matplotlib, Seaborn, plotly, ggplot2, AWS cloud-based tools</li>
-                <li>Databases/Tools: Hive, MongoDB, PostgreSQL, Microsoft Excel, Tableau</li>
-            </ul>
-        </section>
+            <section class="section">
+        <h2>Work Experience</h2>
+        <ul>
+            <li>Data Engineer Intern, Kuwaiti Sudanese Holding Company (December 2021 – August 2022)</li>
+            <li>Software Engineer, Mechatronics Integrated Solutions (January 2021 - December 2021)</li>
+        </ul>
+    </section>
 
     <section class="section">
-        <h2>Academic Achievements & Projects</h2
-                     <li>Data Visualization/Cloud: matplotlib, Seaborn, plotly, ggplot2, AWS cloud-based tools</li>
+        <h2>Skills & Interests</h2>
+        <ul>
+            <li>Programming: Python, R, SQL, Scala, Bash, C++, TypeScript</li>
+            <li>Modeling: Inferential & Predictive Modeling, Hypothesis Testing, and more</li>
+            <li>Deep Learning: CNNs, RNNs, GANs, Transformers, BERT, GPT, LSTM, Q-learning</li>
+            <li>Libraries: NumPy, Pandas, PyTorch, JAX, TensorFlow, Keras, Scikit-learn, stats model</li>
+                        <li>Data Visualization/Cloud: matplotlib, Seaborn, plotly, ggplot2, AWS cloud-based tools</li>
             <li>Databases/Tools: Hive, MongoDB, PostgreSQL, Microsoft Excel, Tableau</li>
         </ul>
     </section>
@@ -254,56 +239,6 @@
 </main>
 </body>
 </html>
-            <li>Data Visualization/Cloud: matplotlib, Seaborn, plotly, ggplot2, AWS cloud-based tools</li>
-            <li>Databases/Tools: Hive, MongoDB, PostgreSQL, Microsoft Excel, Tableau</li>
-        </ul>
-    </section>
-
-    <section class="section">
-        <h2>Academic Achievements & Projects</h2>
-        <ul>
-            <li>MS Data Science Scholarship at Texas A&M University (Merit-Based)</li>
-            <li>Open Source contributions: Openai, Huggingface</li>
-            <li>2nd position domestically in IEEEXtreme competitive programming competition</li>
-            <li>4th position in EEESE projects competition (Project: Arduino-Mini-CNC-Plotter-Machine)</li>
-        </ul>
-    </section>
-
-    <section class="section">
-        <h2>Projects</h2>
-        <div class="project">
-            <a href="https://github.com/YourGitHubUsername/Content-Based-Image-Retrieval" target="_blank">
-                <img src="project1_image.jpg" alt="Project Image">
-                <h3>Content-Based Image Retrieval</h3>
-                <p>ResNet, EfficientNet, Diffusion</p>
-            </a>
-        </div>
-        <div class="project">
-            <a href="https://github.com/YourGitHubUsername/Enzyme-Classification" target="_blank">
-                <img src="project2_image.jpg" alt="Project Image">
-                <h3>Enzyme Classification</h3>
-                <p>Bidirectional LSTM, RNN, SGD optimizer</p>
-            </a>
-        </div>
-        <div class="project">
-            <a href="https://github.com/YourGitHubUsername/Predicting-Customer-Churn" target="_blank">
-                <img src="project3_image.jpg" alt="Project Image">
-                <h3>Predicting Customer Churn - Market Analysis</h3>
-                <p>XGBoost, Linear Regression, Decision Trees</p>
-            </a>
-        </div>
-        <div class="project">
-            <a href="https://github.com/YourGitHubUsername/Web-Traffic-Forecasting" target="_blank">
-                <img src="project4_image.jpg" alt="Project Image">
-                <h3>Web-Traffic Multivariant Time Series Forecasting</h3>
-                <p>RNN, Bidirectional LSTM, SGD optimizer</p>
-            </a>
-        </div>
-    </section></body>
-</html>
-</main>
-</body>
-</html>
-
+           
 
 
