@@ -88,6 +88,15 @@
         footer a:hover {
             text-decoration: underline;
         }
+        .dataset-image {
+            text-align: center; /* Center the image */
+            margin: 20px 0; /* Margin for spacing */
+        }
+
+        .dataset-image img {
+            width: 80%; /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
     </style>
 </head>
 <body>
@@ -119,6 +128,9 @@
         <section id="introduction">
             <h2>Introduction</h2>
             <p>FashionMNIST, a dataset comprising 70,000 grayscale images across 10 classes, presents a comprehensive challenge for machine learning models due to its complex nature and the resemblance between different categories. The study emphasizes the importance of clothing item classification in computer vision and its practical applications, such as in inventory management.</p>
+            <div class="dataset-image">
+            <img src="dataset.jpg" alt="FashionMNIST Dataset Overview">
+        </div>
         </section>
 
         <section id="methods">
